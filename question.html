@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Question Form</title>
+    <link rel="stylesheet" href="styles/Externalstylesheet.css">
+    <style>
+      input:invalid{
+        border: 2px dashed red;
+      }
+      input:valid{
+        border: 2px solid black;
+      }
+      textarea:invalid{
+        border: 2px dashed red;
+      }
+      textarea:valid{
+        border: 2px solid black;
+      }
+*{
+  font-family: arial;
+}
+body{
+  color:blue;
+  background-color:#E6E6FA
+  border: 1px solid black;
+}
+h1{
+  color: #191970;
+  font-family:Times New Roman;
+}
+h2{
+  border: 3px dashed blue;
+}
+.classforContact{
+  color: #291970;
+  border: 3px dashed blue;
+}
+#IDselector{
+  backgrund-color: #591970;
+}
+    </style>
+  </head>
+  <body>
+    <table>
+    <tr>
+      <td><img src="trolley.png" alt="Trolley" height="50" width="50"></td>
+    <td><h1> Online Shopping </h1></td>
+    </tr>
+    </table>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="#">Form</a>
+
+      </nav>
+<p>How can we help you?</p>
+<form><fieldset>
+ <label> Name: </label>
+ <input type="text" maxlength="10" minlength="3" required><br/><br/>
+ <select id="simple" name="simple" required>
+   <option selected> Topic </option>
+   <option> My Account </option>
+   <option> Data Privacy</option>
+   <option> Payment</option>
+   <option> Shipping And Delivery</option>
+   <option> Return </option>
+ </select><br/><br/>
+ <label >Question:</label>
+ <textarea cols="40" rows="4" required></textarea><br/><br/>
+ <label>Email:</label>
+ <input type="email" name="email" id="email" multiple required><br/><br/>
+ <label>Phone Number: +60 </label>
+ <input type="number" maxlength="8" required><br/><br/>
+ <button type="submit">Submit</button>
+<button type="reset">Reset</button>
+    </fieldset>
+</form>
+
+  </body>
+</html>
